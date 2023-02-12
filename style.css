@@ -22,6 +22,9 @@ nav ul {
 
 nav li {
     padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
 }
 
 a {
@@ -37,11 +40,13 @@ h1, h2, h3, p {
 }
 
 #home, #skill {
-    background-color: #92B4EC;
+    background-color: #EDDBC7;
 }
 
 .logo p, .footer-title h3 {
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
 }
 
 /* Home */
@@ -76,6 +81,7 @@ h1, h2, h3, p {
 
 .aboutpic img {
     width: 250px;
+    border-radius: 50%;
 }
 
 .abouttext {
@@ -108,7 +114,7 @@ h1, h2, h3, p {
 }
 
 .cards svg {
-    color: #92B4EC;
+    color: #EDDBC7;
 }
 
 .cards h3 {
@@ -121,6 +127,7 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 #contact h2{
@@ -133,10 +140,12 @@ h1, h2, h3, p {
     flex-direction: row;
     list-style: none;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .account a {
-    color: #92B4EC;
+    color: #EDDBC7;
 }
 
 .account li {
@@ -165,7 +174,7 @@ textarea {
 }
 
 .send-button {
-    background-color: #92B4EC;
+    background-color: #EDDBC7;
 }
 
 /* footer */
@@ -189,4 +198,5 @@ textarea {
 
 .footer-closed {
     text-align: center;
+    background-color: #EDDBC7;
 }
