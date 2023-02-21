@@ -200,4 +200,5 @@ textarea {
 .footer-closed {
     text-align: center;
     background-color: #EDDBC7;
+    flex-shrink: 0;
 }
