@@ -1,10 +1,30 @@
-@media screen and (min-width:240px) and (max-width:480px){
+@media screen and (max-width:768px){
     nav {
-        display: none;
+        display: block;
+        flex-direction: column;
     }
 
     section {
         width: fit-content;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    aside ul {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 1rem;
+        flex-flow: column nowrap;
+        bottom: 0;
+        margin-top: 300px;
     }
 
     .home, .about {
@@ -16,10 +36,35 @@
     }
 
     .hometitle h2, h3 {
+        font-size: 75%;
+    }
+    
+    .hometitle h1 {
         font-size: 100%;
     }
 
-    .skill {
+    .hometitle p {
+        font-size:75%;
+    }
+
+
+    .profilepic img{
+        display: block;
         flex-direction: column;
+        width:150px;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .aboutpic img {
+        display: block;
+        flex-direction: column;
+        width:150px;
+        border-radius: 50%;
+    }
+
+    .prev, .next,.text, .number {
+        font-size: 12px
     }
 }
