@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,15 +46,21 @@ a {
     text-decoration: none;
 }
 
-a:visited, a:link, a:active, a:hover {
+a:visited,
+a:link,
+a:active,
+a:hover {
     color: #AD8E70;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     font-family: 'Poppins', sans-serif;
 }
 
-.logo p{
+.logo p {
     font-family: 'Poppins', sans-serif;
     font-size: 150%;
 }
@@ -82,18 +88,24 @@ aside ul {
     gap: 1rem;
 }
 
-#home{
+aside ul li:hover {
+    transform: scale(1.5);
+}
+
+#home {
     background-color: #EDDBC7;
 }
 
-.logo p, .footer-title h3 {
+.logo p,
+.footer-title h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 150%;
 }
 
 /* Home */
 
-.home, .about {
+.home,
+.about {
     display: flex;
     flex-direction: row;
     width: 75%;
@@ -101,21 +113,21 @@ aside ul {
     padding: 30px 0px;
 }
 
-.hometitle h3{
+.hometitle h3 {
     font-size: 150%;
 }
 
-.hometitle h1{
+.hometitle h1 {
     font-size: 200%;
 }
 
-.hometitle h2{
+.hometitle h2 {
     font-size: 150%;
     padding-bottom: 30px;
 }
 
-.profilepic img{
-    width:250px;
+.profilepic img {
+    width: 250px;
     border-radius: 50%;
     margin-left: 30px;
 }
@@ -124,12 +136,13 @@ aside ul {
     text-align: center;
     background-color: #EDDBC7;
     flex-shrink: 0;
-    left : 0;
+    left: 0;
     bottom: 0;
     position: fixed;
     width: 100%;
 }
-.footer-title{
+
+.footer-title {
     font-size: 75%;
 }
 
@@ -149,89 +162,226 @@ aside ul {
 }
 
 /* slideshow images */
-#photos h2{
+#photos h2 {
     text-align: center;
     padding: 30px 0px;
 }
 
 .slideshow {
-max-width: 1000px;
-position: relative;
-margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-padding: 16px;
-margin-top: -22px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-background-color: #EDDBC7;
+.prev:hover,
+.next:hover {
+    background-color: #EDDBC7;
 }
 
-.prev, .next,.text, .number {
-font-family: 'Poppins', sans-serif;
+.prev,
+.next,
+.text,
+.number {
+    font-family: 'Poppins', sans-serif;
 }
 
 .text {
-color: white;
-font-size: 30px;
-padding: 10px 12px;
-position: absolute;
-bottom: 10px;
-width: 100%;
-text-align: center;
-font-weight: bold;
+    color: white;
+    font-size: 30px;
+    padding: 10px 12px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
 }
 
 
 .number {
-color: white;
-font-size: 20px;
-padding: 8px 12px;
-position: absolute;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
 }
 
 .dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-background-color: #AD8E70;
+.active,
+.dot:hover {
+    background-color: #AD8E70;
 }
 
 .fade {
-animation-name: fade;
-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
-from {opacity: .2} 
-to {opacity: 1}
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
 }
+
 .photo {
     border-radius: 2%;
     width: 100%;
+}
+
+/* Cards Index */
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    transition: transform 0.3s ease-in-out;
+    background-color: #F9F5E7;
+    border-radius: 15px;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+}
+
+.text-caption {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    padding: 1rem;
+}
+
+.text-caption h1 {
+    text-align: center;
+    color: #f9f5E7;
+}
+
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body .btn {
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    background: #EDDBC7;
+    margin-top: 30px;
+    padding: 10px 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card-body .btn:hover {
+    transform: scale(1.07);
+}
+
+.card:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive media queries */
+
+@media screen and (max-width: 1000px) {
+    .text-caption h1 {
+        font-size: large;
+    }
+
+    .card {
+        flex: 0 0 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .text-caption h1 {
+        font-size: xx-large;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .heading {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .row {
+        margin: 0 2rem;
+    }
+
+    .card {
+        margin: 2rem;
+        flex: 0 0 100%;
+    }
+
+    .card-header img {
+        aspect-ratio: 1;
+    }
+
+    .text-caption {
+        aspect-ratio: 1;
+    }
 }
