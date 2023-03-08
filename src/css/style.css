@@ -27,7 +27,7 @@ nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 2rem 1rem;
+    gap: 2rem 3rem;
 }
 
 nav li {
@@ -294,6 +294,7 @@ aside ul li:hover {
     object-fit: cover;
     aspect-ratio: 4 / 3;
     width: 100%;
+    opacity: 0.75;
 }
 
 .text-caption {
@@ -340,6 +341,7 @@ aside ul li:hover {
     transform: scale(1.08);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+
 }
 
 .project-title {
