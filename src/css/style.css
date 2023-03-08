@@ -41,6 +41,9 @@ nav li a {
     border-radius: 999px;
     transition: all .2s ease-in-out;
 }
+nav li a:hover{
+    color: #EDDBC7;
+}
 
 a {
     text-decoration: none;
@@ -48,8 +51,7 @@ a {
 
 a:visited,
 a:link,
-a:active,
-a:hover {
+a:active{
     color: #AD8E70;
 }
 
@@ -90,6 +92,7 @@ aside ul {
 
 aside ul li:hover {
     transform: scale(1.5);
+    transition: all .2s ease-in-out;
 }
 
 #home {
@@ -123,9 +126,13 @@ aside ul li:hover {
 
 .hometitle h2 {
     font-size: 150%;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
+.hometitle p {
+    font-size: 105%;
+
+}
 .profilepic img {
     width: 250px;
     border-radius: 50%;
@@ -295,6 +302,7 @@ aside ul li:hover {
     aspect-ratio: 4 / 3;
     width: 100%;
     opacity: 0.75;
+    filter: brightness(0.8);
 }
 
 .text-caption {
