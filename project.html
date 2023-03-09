@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/style2.css">
-    <title>My Profile</title>
+    <title>My Project</title>
 </head>
 
 <body>
@@ -26,35 +26,70 @@
     </header>
 
     <!-- Main content -->
-
-    <!-- Home -->
-    <section id="home">
-        <div class="home">
-            <div class="hometitle">
-                <h3>Hi, There! </h3>
-                <h1>I'm Nizar</h1>
-                <h2>as University Student</h2>
-                <p>Just ordinary Weebs who interested in the world of technology, especially in Machine Learning and Cloud Computing
-                    . As a student in the informatics study program.</p>
-            </div>
-            
-            <div class="profilepic">
-                <img src="src/images/nizar1.jpg" alt="foto profil" id="changeImage" onclick="changingImage()"/>
-            </div>
-            <!-- changeing Images using Js -->
-            <script>
-                function changingImage() {
-                    var image = document.getElementById('changeImage');
-                    if (image.src.match("nizar1")) {
-                        image.src = "src/images/nizar.jpg";
-                    } else {
-                        image.src = "src/images/nizar1.jpg";
-                    }
-                }
-            </script>
+    <!-- Projects -->
+    
+    <div class="container">
+        <div class="project-title">
+            <h1>Projects</h1>
         </div>
-    </section>
 
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    <img src="src/images/pakgv.jpg">
+                    <div class="text-caption">
+                        <h1>El Zorro Caminando En El Parque</h1>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>a Sad fox
+                        who don't know where
+                        and he found a little garden when it rains
+                        towards park thinking about what is making him sad and find his own happiness......
+                        <br> <br>
+                        This Project for Final Submission of Computer Graphics Course
+                    </p>
+                    <a href="https://github.com/FerryFn/el-zorro-caminando-en-el-parque" class="btn">Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="src/images/sukoshiwpp.png">
+                    <div class="text-caption">
+                        <h1>Guitar Chords Classification</h1>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Because many people cannot play or recognize the basic key patterns of guitar instruments, 
+                        we will try to create a project or program that makes an Artificial Intelligence will classify, 
+                        recognize the Basic Guitar Key patterns in the form of images.
+                        <br> <br>
+                        This Project for Final Submission of Artifical Intelligence Course
+                    </p>
+                    <a href="https://github.com/Sukoshi2/GuitarChordsClassification" class="btn">Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="src/images/nasgor.png">
+                    <div class="text-caption">
+                        <h1>GO-nasGOr</h1>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>In the mobile application we created, the theme we used was food delivery. 
+                        This application is useful to facilitate the ordering process safely, 
+                        quickly and deliciously. This theme also serves to make it easier for users 
+                        to order food from the seller. Especially increasing efficiency for today's society.
+                        <br> <br>
+                        This Project for Final Submission of Mobile Programming Course
+                    </p>
+                    <a href="https://github.com/Sukoshi2/go-nasgor" class="btn">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Contact -->
     <aside id="contact">
         <div class="contact">

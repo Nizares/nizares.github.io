@@ -26,7 +26,9 @@
         bottom: 0;
         margin-top: 300px;
     }
-
+    #home{
+        margin-top: 0px;
+    }
     .home, .about {
         flex-direction: column;
     }
